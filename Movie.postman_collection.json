@@ -1,0 +1,775 @@
+{
+	"info": {
+		"_postman_id": "dafb0c78-d491-43cb-b02d-8c57305b5be3",
+		"name": "Movie",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "formats",
+			"item": [
+				{
+					"name": "movie.loc/api/v1/formats",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "movie.loc/api/v1/formats",
+							"host": [
+								"movie",
+								"loc"
+							],
+							"path": [
+								"api",
+								"v1",
+								"formats"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "movie.loc/api/v1/formats/1",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "movie.loc/api/v1/formats/1",
+							"host": [
+								"movie",
+								"loc"
+							],
+							"path": [
+								"api",
+								"v1",
+								"formats",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "movie.loc/api/v1/formats",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9tb3ZpZS5sb2NcL2FwaVwvdjFcL3JlZnJlc2giLCJpYXQiOjE1NzE0ODEyNDUsImV4cCI6MTU3MTU2Nzg4OCwibmJmIjoxNTcxNDgxNDg4LCJqdGkiOiJMQlNqMWd5aVJHVUFXc3gwIiwic3ViIjoxLCJwcnYiOiI4N2UwYWYxZWY5ZmQxNTgxMmZkZWM5NzE1M2ExNGUwYjA0NzU0NmFhIn0.E7xT4QhIbJ_ZzSRey_oMeX_zYi4NdWRV__boZil73Us",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"name\":\"test\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "movie.loc/api/v1/formats",
+							"host": [
+								"movie",
+								"loc"
+							],
+							"path": [
+								"api",
+								"v1",
+								"formats"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "movie.loc/api/v1/formats/3",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9tb3ZpZS5sb2NcL2FwaVwvdjFcL3JlZnJlc2giLCJpYXQiOjE1NzE0ODEyNDUsImV4cCI6MTU3MTU2Nzg4OCwibmJmIjoxNTcxNDgxNDg4LCJqdGkiOiJMQlNqMWd5aVJHVUFXc3gwIiwic3ViIjoxLCJwcnYiOiI4N2UwYWYxZWY5ZmQxNTgxMmZkZWM5NzE1M2ExNGUwYjA0NzU0NmFhIn0.E7xT4QhIbJ_ZzSRey_oMeX_zYi4NdWRV__boZil73Us",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"name\": \"Blu-Ray\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "movie.loc/api/v1/formats/3",
+							"host": [
+								"movie",
+								"loc"
+							],
+							"path": [
+								"api",
+								"v1",
+								"formats",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "movie.loc/api/v1/formats/5",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9tb3ZpZS5sb2NcL2FwaVwvdjFcL3JlZnJlc2giLCJpYXQiOjE1NzE0ODEyNDUsImV4cCI6MTU3MTU2Nzg4OCwibmJmIjoxNTcxNDgxNDg4LCJqdGkiOiJMQlNqMWd5aVJHVUFXc3gwIiwic3ViIjoxLCJwcnYiOiI4N2UwYWYxZWY5ZmQxNTgxMmZkZWM5NzE1M2ExNGUwYjA0NzU0NmFhIn0.E7xT4QhIbJ_ZzSRey_oMeX_zYi4NdWRV__boZil73Us",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "movie.loc/api/v1/formats/5",
+							"host": [
+								"movie",
+								"loc"
+							],
+							"path": [
+								"api",
+								"v1",
+								"formats",
+								"5"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "actors",
+			"item": [
+				{
+					"name": "movie.loc/api/v1/actors",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "movie.loc/api/v1/actors",
+							"host": [
+								"movie",
+								"loc"
+							],
+							"path": [
+								"api",
+								"v1",
+								"actors"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "movie.loc/api/v1/actors/1",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "movie.loc/api/v1/actors/1",
+							"host": [
+								"movie",
+								"loc"
+							],
+							"path": [
+								"api",
+								"v1",
+								"actors",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "movie.loc/api/v1/actors",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9tb3ZpZS5sb2NcL2FwaVwvdjFcL3JlZnJlc2giLCJpYXQiOjE1NzE0ODEyNDUsImV4cCI6MTU3MTU2Nzg4OCwibmJmIjoxNTcxNDgxNDg4LCJqdGkiOiJMQlNqMWd5aVJHVUFXc3gwIiwic3ViIjoxLCJwcnYiOiI4N2UwYWYxZWY5ZmQxNTgxMmZkZWM5NzE1M2ExNGUwYjA0NzU0NmFhIn0.E7xT4QhIbJ_ZzSRey_oMeX_zYi4NdWRV__boZil73Us",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"name\":\"test\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "movie.loc/api/v1/actors",
+							"host": [
+								"movie",
+								"loc"
+							],
+							"path": [
+								"api",
+								"v1",
+								"actors"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "movie.loc/api/v1/actors/1",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9tb3ZpZS5sb2NcL2FwaVwvdjFcL3JlZnJlc2giLCJpYXQiOjE1NzE0ODEyNDUsImV4cCI6MTU3MTU2Nzg4OCwibmJmIjoxNTcxNDgxNDg4LCJqdGkiOiJMQlNqMWd5aVJHVUFXc3gwIiwic3ViIjoxLCJwcnYiOiI4N2UwYWYxZWY5ZmQxNTgxMmZkZWM5NzE1M2ExNGUwYjA0NzU0NmFhIn0.E7xT4QhIbJ_ZzSRey_oMeX_zYi4NdWRV__boZil73Us",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"name\": \"test\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "movie.loc/api/v1/actors/1",
+							"host": [
+								"movie",
+								"loc"
+							],
+							"path": [
+								"api",
+								"v1",
+								"actors",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "movie.loc/api/v1/actors/101",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9tb3ZpZS5sb2NcL2FwaVwvdjFcL3JlZnJlc2giLCJpYXQiOjE1NzE0ODEyNDUsImV4cCI6MTU3MTU2Nzg4OCwibmJmIjoxNTcxNDgxNDg4LCJqdGkiOiJMQlNqMWd5aVJHVUFXc3gwIiwic3ViIjoxLCJwcnYiOiI4N2UwYWYxZWY5ZmQxNTgxMmZkZWM5NzE1M2ExNGUwYjA0NzU0NmFhIn0.E7xT4QhIbJ_ZzSRey_oMeX_zYi4NdWRV__boZil73Us",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "movie.loc/api/v1/actors/101",
+							"host": [
+								"movie",
+								"loc"
+							],
+							"path": [
+								"api",
+								"v1",
+								"actors",
+								"101"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "movies",
+			"item": [
+				{
+					"name": "movie.loc/api/v1/movies",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "movie.loc/api/v1/movies",
+							"host": [
+								"movie",
+								"loc"
+							],
+							"path": [
+								"api",
+								"v1",
+								"movies"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "movie.loc/api/v1/movies/1",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "movie.loc/api/v1/movies/1",
+							"host": [
+								"movie",
+								"loc"
+							],
+							"path": [
+								"api",
+								"v1",
+								"movies",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "movie.loc/api/v1/movies",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9tb3ZpZS5sb2NcL2FwaVwvdjFcL3JlZnJlc2giLCJpYXQiOjE1NzE0ODEyNDUsImV4cCI6MTU3MTU2Nzg4OCwibmJmIjoxNTcxNDgxNDg4LCJqdGkiOiJMQlNqMWd5aVJHVUFXc3gwIiwic3ViIjoxLCJwcnYiOiI4N2UwYWYxZWY5ZmQxNTgxMmZkZWM5NzE1M2ExNGUwYjA0NzU0NmFhIn0.E7xT4QhIbJ_ZzSRey_oMeX_zYi4NdWRV__boZil73Us",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"name\": \"test\",\n\t\"year\": 1999,\n\t\"format_id\": 3,\n\t\"actors\": [1,10,18,65,84,100]\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "movie.loc/api/v1/movies",
+							"host": [
+								"movie",
+								"loc"
+							],
+							"path": [
+								"api",
+								"v1",
+								"movies"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "movie.loc/api/v1/movies/31",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9tb3ZpZS5sb2NcL2FwaVwvdjFcL3JlZnJlc2giLCJpYXQiOjE1NzE0ODEyNDUsImV4cCI6MTU3MTU2Nzg4OCwibmJmIjoxNTcxNDgxNDg4LCJqdGkiOiJMQlNqMWd5aVJHVUFXc3gwIiwic3ViIjoxLCJwcnYiOiI4N2UwYWYxZWY5ZmQxNTgxMmZkZWM5NzE1M2ExNGUwYjA0NzU0NmFhIn0.E7xT4QhIbJ_ZzSRey_oMeX_zYi4NdWRV__boZil73Us",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"name\": \"test\",\n\t\"year\": 1999,\n\t\"format_id\": 3,\n\t\"actors\": [5,15,25,55,85,95]\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "movie.loc/api/v1/movies/2",
+							"host": [
+								"movie",
+								"loc"
+							],
+							"path": [
+								"api",
+								"v1",
+								"movies",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "movie.loc/api/v1/movies/31",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9tb3ZpZS5sb2NcL2FwaVwvdjFcL3JlZnJlc2giLCJpYXQiOjE1NzE0ODEyNDUsImV4cCI6MTU3MTU2Nzg4OCwibmJmIjoxNTcxNDgxNDg4LCJqdGkiOiJMQlNqMWd5aVJHVUFXc3gwIiwic3ViIjoxLCJwcnYiOiI4N2UwYWYxZWY5ZmQxNTgxMmZkZWM5NzE1M2ExNGUwYjA0NzU0NmFhIn0.E7xT4QhIbJ_ZzSRey_oMeX_zYi4NdWRV__boZil73Us",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "movie.loc/api/v1/movies/31",
+							"host": [
+								"movie",
+								"loc"
+							],
+							"path": [
+								"api",
+								"v1",
+								"movies",
+								"31"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "movie.loc/api/v1/search",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/json"
+							},
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"s\":\"Ms. Katelin Braun I\",\n\t\"by\":\"actor\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "movie.loc/api/v1/search",
+							"host": [
+								"movie",
+								"loc"
+							],
+							"path": [
+								"api",
+								"v1",
+								"search"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "auth",
+			"item": [
+				{
+					"name": "movie.loc/api/v1/register",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"email\":\"user4@gmail.com\",\n\t\"password\":\"password\",\n\t\"name\":\"user4\"\n}"
+						},
+						"url": {
+							"raw": "movie.loc/api/v1/register",
+							"host": [
+								"movie",
+								"loc"
+							],
+							"path": [
+								"api",
+								"v1",
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "movie.loc/api/v1/login",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"email\":\"user1@gmail.com\",\n\t\"password\":\"password\"\n}"
+						},
+						"url": {
+							"raw": "movie.loc/api/v1/login",
+							"host": [
+								"movie",
+								"loc"
+							],
+							"path": [
+								"api",
+								"v1",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "movie.loc/api/v1/me",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"type": "text",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9tb3ZpZS5sb2NcL2FwaVwvdjFcL3JlZnJlc2giLCJpYXQiOjE1NzE0ODEyNDUsImV4cCI6MTU3MTU2Nzg4OCwibmJmIjoxNTcxNDgxNDg4LCJqdGkiOiJMQlNqMWd5aVJHVUFXc3gwIiwic3ViIjoxLCJwcnYiOiI4N2UwYWYxZWY5ZmQxNTgxMmZkZWM5NzE1M2ExNGUwYjA0NzU0NmFhIn0.E7xT4QhIbJ_ZzSRey_oMeX_zYi4NdWRV__boZil73Us"
+							}
+						],
+						"url": {
+							"raw": "movie.loc/api/v1/me",
+							"host": [
+								"movie",
+								"loc"
+							],
+							"path": [
+								"api",
+								"v1",
+								"me"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "movie.loc/api/v1/logout",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9tb3ZpZS5sb2NcL2FwaVwvdjFcL3JlZnJlc2giLCJpYXQiOjE1NzE0ODEyNDUsImV4cCI6MTU3MTU2Nzg4OCwibmJmIjoxNTcxNDgxNDg4LCJqdGkiOiJMQlNqMWd5aVJHVUFXc3gwIiwic3ViIjoxLCJwcnYiOiI4N2UwYWYxZWY5ZmQxNTgxMmZkZWM5NzE1M2ExNGUwYjA0NzU0NmFhIn0.E7xT4QhIbJ_ZzSRey_oMeX_zYi4NdWRV__boZil73Us",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "movie.loc/api/v1/logout",
+							"host": [
+								"movie",
+								"loc"
+							],
+							"path": [
+								"api",
+								"v1",
+								"logout"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "movie.loc/api/v1/refresh",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9tb3ZpZS5sb2NcL2FwaVwvdjFcL2xvZ2luIiwiaWF0IjoxNTcxNDgxMjQ1LCJleHAiOjE1NzE1Njc2NDUsIm5iZiI6MTU3MTQ4MTI0NSwianRpIjoiTDdqb0RvMEY2RXlvclYxSCIsInN1YiI6MSwicHJ2IjoiODdlMGFmMWVmOWZkMTU4MTJmZGVjOTcxNTNhMTRlMGIwNDc1NDZhYSJ9.xGiDWxXvfv8okNOH9rL0omZemGE2-imWteUOKldHBcA",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "movie.loc/api/v1/refresh",
+							"host": [
+								"movie",
+								"loc"
+							],
+							"path": [
+								"api",
+								"v1",
+								"refresh"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		}
+	],
+	"protocolProfileBehavior": {}
+}
