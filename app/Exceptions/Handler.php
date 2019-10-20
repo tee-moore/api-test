@@ -3,6 +3,8 @@
 namespace App\Exceptions;
 
 use Exception;
+use Illuminate\Database\Eloquent\ModelNotFoundException;
+use Illuminate\Database\QueryException;
 use Illuminate\Foundation\Exceptions\Handler as ExceptionHandler;
 
 class Handler extends ExceptionHandler
@@ -46,6 +48,24 @@ class Handler extends ExceptionHandler
      */
     public function render($request, Exception $exception)
     {
+        if ($exception instanceof ModelNotFoundException && $request->wantsJson()) {
+            return response()->json([
+                'error' => 'Resource not found'
+            ], 404);
+        }
+
+        if ($exception instanceof QueryException && $request->wantsJson()) {
+            if($exception->errorInfo[1] == 1451){
+                return response()->json([
+                    'error' => 'Cannot delete or update a parent row: a foreign key constraint fails'
+                ], 400);
+            }
+
+            return response()->json([
+                'error' => 'Something went wrong. Contact administrator.'
+            ], 400);
+        }
+
         return parent::render($request, $exception);
     }
 }
