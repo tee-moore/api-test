@@ -39,6 +39,14 @@ class User extends Authenticatable implements JWTSubject
     ];
 
     /**
+     * Get the movies by the user.
+     */
+    public function movies()
+    {
+        return $this->hasMany(Movie::class);
+    }
+
+    /**
      * Get the identifier that will be stored in the subject claim of the JWT.
      *
      * @return mixed
