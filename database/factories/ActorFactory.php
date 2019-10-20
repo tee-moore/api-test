@@ -1,10 +1,8 @@
 <?php
 
 /** @var \Illuminate\Database\Eloquent\Factory $factory */
-use App\User;
+use App\Actor;
 use Faker\Generator as Faker;
-use Illuminate\Support\Str;
-use \Illuminate\Support\Facades\Hash;
 
 /*
 |--------------------------------------------------------------------------
@@ -17,17 +15,8 @@ use \Illuminate\Support\Facades\Hash;
 |
 */
 
-$arr = [1,2,3];
-
-$factory->define(User::class, function (Faker $faker) use(&$arr) {
-
-    $id = array_shift ($arr);
-
+$factory->define(Actor::class, function (Faker $faker) {
     return [
-        'name' => "user$id",
-        'email' => "user$id@gmail.com",
-        'email_verified_at' => now(),
-        'password' => Hash::make('password'),
-        'remember_token' => Str::random(10),
+        'name' => $faker->name
     ];
 });

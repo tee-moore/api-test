@@ -1,10 +1,9 @@
 <?php
 
 /** @var \Illuminate\Database\Eloquent\Factory $factory */
-use App\User;
+
+use App\Movie;
 use Faker\Generator as Faker;
-use Illuminate\Support\Str;
-use \Illuminate\Support\Facades\Hash;
 
 /*
 |--------------------------------------------------------------------------
@@ -17,17 +16,12 @@ use \Illuminate\Support\Facades\Hash;
 |
 */
 
-$arr = [1,2,3];
-
-$factory->define(User::class, function (Faker $faker) use(&$arr) {
-
-    $id = array_shift ($arr);
-
+$factory->define(Movie::class, function (Faker $faker)
+{
     return [
-        'name' => "user$id",
-        'email' => "user$id@gmail.com",
-        'email_verified_at' => now(),
-        'password' => Hash::make('password'),
-        'remember_token' => Str::random(10),
+        'name'      => $faker->sentence($nbWords = 2, $variableNbWords = true),
+        'year'      => $faker->numberBetween($min = 1980, $max = 2018),//year($max = 'now')
+        'format_id' => $faker->numberBetween($min = 1, $max = 3),
+        'user_id'   => $faker->numberBetween($min = 1, $max = 3),
     ];
 });
