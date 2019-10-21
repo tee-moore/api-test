@@ -7,15 +7,15 @@
 ```
 git clone https://github.com/tee-moore/api-test.git
 ```
-
-2.Create .env file, add database credentials and create application key
-```
-php artisan key:generate
-```
+2.Create .env file, add database credentials  
 
 3.Install dependencies using composer
 ```
-php artisan migrate
+composer install
+```
+4.Create application key
+```
+php artisan key:generate
 ```
 4.Run migration
 ```
