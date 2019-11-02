@@ -63,3 +63,18 @@ php artisan jwt:secret
 | PUT/PATCH | api/v1/movies/{movie}     |
 | DELETE    | api/v1/movies/{movie}     |
 | GET       | api/v1/search             |
+
+
+
+
+>#### Branch featureAjaxPreordersWithEmail
+
+1.Add to .env file
+```
+QUEUE_CONNECTION=database
+MAIL_DRIVER=log
+```
+2.Run The Queue Worker
+```
+php artisan queue:work
+```
