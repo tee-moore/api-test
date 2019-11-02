@@ -40,4 +40,12 @@ class Movie extends Model
     {
         return $this->belongsTo(User::class);
     }
+
+    /**
+     * Get the preorders that belongs to the movie.
+     */
+    public function preorders()
+    {
+        return $this->hasMany(Preorder::class);
+    }
 }
