@@ -12,5 +12,7 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('preorders');
 });
+
+Route::post('/preorder', 'PreorderController@store')->name('preorder.store');
