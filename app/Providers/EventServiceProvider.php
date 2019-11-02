@@ -2,6 +2,8 @@
 
 namespace App\Providers;
 
+use App\Events\PreorderCreated;
+use App\Listeners\SendEmailPreorderNotification;
 use Illuminate\Auth\Events\Registered;
 use Illuminate\Auth\Listeners\SendEmailVerificationNotification;
 use Illuminate\Foundation\Support\Providers\EventServiceProvider as ServiceProvider;
@@ -17,6 +19,9 @@ class EventServiceProvider extends ServiceProvider
     protected $listen = [
         Registered::class => [
             SendEmailVerificationNotification::class,
+        ],
+        PreorderCreated::class => [
+            SendEmailPreorderNotification::class,
         ],
     ];
 
